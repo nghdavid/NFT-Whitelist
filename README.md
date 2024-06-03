@@ -1,66 +1,18 @@
-## Foundry
+## NFT whitelist
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**NFT whitelist showcases two methods for granting whitelists to users in the context of NFTs. It also utilizes secure random number generators provided by ChainLink VRF to mint NFTs randomly.**
 
-Foundry consists of:
+## Main Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Efficient Gas Usage**: Save whitelists in a Merkle tree to reduce gas costs.
+- **Flexible Whitelist Issuance**: Issue whitelists to users with EIP-191 signatures.
+- **Tamper-Proof RNG**: Utilize ChainLink VRF to prevent manipulation of the random number generator by hackers.
 
-## Documentation
+## Smart contract Technique
+- Merkle tree
+- EIP-191 signature
+- ChainLink VRF
+- ERC721
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Demo
+## How to start my project
