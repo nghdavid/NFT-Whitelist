@@ -22,7 +22,7 @@ contract NFTScript is Script {
         console.log("Account", account);
 
         vm.startBroadcast(privateKey);
-
+        // new NFT(_root, _signer, subscriptionId)
         NFT nft = new NFT(0x5159467ff4fb8de8f3a8ec1c9ba54edad80d037ec7849a81f032bd0f7aab46a4, 0x7F72dDF0e619F9B1600D9B68979BD5a3F21C01E7, 5564272400328011146772289648250464027751378309997966949718957330259599796679);
 
         vm.stopBroadcast();
