@@ -1,10 +1,10 @@
-[Website Link]()  
-[NFT Backend code]()  
-This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
-
 ## NFT whitelist
 
 **NFT whitelist showcases two methods for granting whitelists to users in the context of NFTs. It also utilizes secure random number generators provided by ChainLink VRF to mint NFTs randomly.**
+
+- [Website Link]()  
+- [NFT Backend code]()  
+- This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
 
 ## Main Features
 
