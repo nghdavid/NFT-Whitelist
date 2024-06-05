@@ -25,9 +25,10 @@ This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/a
 
 ## Demo
 - Mint by signature
-<img width="60%" alt="signature" src="./docs/readme/signature.gif">
+<img width="50%" alt="signature" src="./docs/readme/signature.gif">
+
 - Mint by proof (Merkle tree)
-<img width="60%" alt="signature" src="./docs/readme/merkle.gif">
+<img width="50%" alt="merkle" src="./docs/readme/merkle.gif">
 
 ## How to start my project
 - Claim ETH and $Link from [Alchemy](https://www.alchemy.com/faucets/arbitrum-sepolia) and [Chainlink](https://faucets.chain.link/arbitrum-sepolia).
