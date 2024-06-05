@@ -1,6 +1,6 @@
-[Website Link]()
-[NFT Backend code]()
-This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).
+[Website Link]()  
+[NFT Backend code]()  
+This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
 
 ## NFT whitelist
 
