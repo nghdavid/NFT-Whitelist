@@ -2,8 +2,8 @@
 
 **NFT whitelist showcases two methods for granting whitelists to users in the context of NFTs. It also utilizes secure random number generators provided by ChainLink VRF to mint NFTs randomly.**
 
-- [Website Link]()  
-- [NFT Backend code]()  
+- [Website Link](http://18.211.171.48:3000/)  
+- [NFT Backend code](https://github.com/nghdavid/NFT_Backend)  
 - This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
 
 ## Main Features
@@ -33,7 +33,7 @@
 ## How to start my project
 - Claim ETH and $Link from [Alchemy](https://www.alchemy.com/faucets/arbitrum-sepolia) and [Chainlink](https://faucets.chain.link/arbitrum-sepolia).
 - Fill in .env (private key, arbitrum sepolia rpc url, etherscan api key).
-- Run [generate_merkle_tree.js]() to calculate a root value.
+- Run [generate_merkle_tree.js](https://github.com/nghdavid/NFT_Backend/blob/main/utils/generate_merkle_tree.js) to calculate a root value.
 - Create [VRF2.5 subscription](https://vrf.chain.link/arbitrum-sepolia/) and get subscription id.
 - Change parameters of constructor in script/NFT.s.sol.
 - Install foundry.
