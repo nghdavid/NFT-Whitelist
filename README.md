@@ -1,66 +1,43 @@
-## Foundry
+## NFT whitelist
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**NFT whitelist showcases two methods for granting whitelists to users in the context of NFTs. It also utilizes secure random number generators provided by ChainLink VRF to mint NFTs randomly.**
 
-Foundry consists of:
+- [Website Link](http://18.211.171.48:3000/)  
+- [NFT Backend code](https://github.com/nghdavid/NFT_Backend)  
+- This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Main Features
 
-## Documentation
+- **Efficient Gas Usage**: Save whitelists in a **Merkle tree** to reduce gas costs.
+- **Flexible Whitelist Issuance**: Issue whitelists to users with **EIP-191** signatures.
+- **Tamper-Proof RNG**: Utilize **ChainLink VRF** to prevent manipulation of the random number generator by hackers.
 
-https://book.getfoundry.sh/
+## Smart contract Technique
+- Merkle tree
+- EIP-191 signature
+- ChainLink VRF
+- ERC721
 
-## Usage
+## Backend Technique
+- Ethers.js
+- Express.js
+- Openzeppelin/merkle-tree
 
-### Build
+## Demo
+- Mint by signature
+<img width="75%" alt="signature" src="./docs/readme/signature.gif">
 
-```shell
-$ forge build
-```
+- Mint by proof (Merkle tree)
+<img width="75%" alt="merkle" src="./docs/readme/merkle.gif">
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## How to start my project
+- Claim ETH and $Link from [Alchemy](https://www.alchemy.com/faucets/arbitrum-sepolia) and [Chainlink](https://faucets.chain.link/arbitrum-sepolia).
+- Fill in .env (private key, arbitrum sepolia rpc url, etherscan api key).
+- Run [generate_merkle_tree.js](https://github.com/nghdavid/NFT_Backend/blob/main/utils/generate_merkle_tree.js) to calculate a root value.
+- Create [VRF2.5 subscription](https://vrf.chain.link/arbitrum-sepolia/) and get subscription id.
+- Change parameters of constructor in script/NFT.s.sol.
+- Install foundry.
+- Run: forge install smartcontractkit/chainlink
+- Run: forge install OpenZeppelin/openzeppelin-contracts
+- Run: forge script script/NFT.s.sol:NFTScript --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv
+- Add the consumer (address of the NFT just deployed) to [your subscription](https://vrf.chain.link/arbitrum-sepolia/).
