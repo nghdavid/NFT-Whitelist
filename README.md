@@ -4,7 +4,7 @@
 
 - [Website Link](http://18.211.171.48:3000/)  
 - [NFT Backend code](https://github.com/nghdavid/NFT_Backend)  
-- This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6).  
+- This NFT is deployed on [Arbitrum Sepolia testnet](https://sepolia.arbiscan.io/address/0xb0F7A2bF92fC59D20890C01Bc2FCfAe7FD02BeD6)
 
 ## Main Features
 
