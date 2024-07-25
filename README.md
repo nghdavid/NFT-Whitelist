@@ -39,5 +39,6 @@
 - Install foundry.
 - Run: forge install smartcontractkit/chainlink
 - Run: forge install OpenZeppelin/openzeppelin-contracts
+- Run: source .env
 - Run: forge script script/NFT.s.sol:NFTScript --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv
 - Add the consumer (address of the NFT just deployed) to [your subscription](https://vrf.chain.link/arbitrum-sepolia/).
